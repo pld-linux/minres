@@ -30,22 +30,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Implementation of a conjugate-gradient type method for solving sparse
-linear equations: solve Ax = b or (A - sI)x = b. The matrix A - sI must
-be symmetric but it may be definite or indefinite or singular. The
-scalar s is a shifting parameter -- it may be any number. The method is
-based on Lanczos tridiagonalization. You may provide a preconditioner,
-but it must be positive definite.
-MINRES is really solving the least-squares problem minimize ||(A - sI)x
-- b||. 
+linear equations: solve Ax = b or (A - sI)x = b. The matrix A - sI
+must be symmetric but it may be definite or indefinite or singular.
+The scalar s is a shifting parameter -- it may be any number. The
+method is based on Lanczos tridiagonalization. You may provide a
+preconditioner, but it must be positive definite. MINRES is really
+solving the least-squares problem minimize ||(A - sI)x - b||. 
 
 %description -l pl
-Implementacja gradientowej metody rozwi±zywania rzadkich uk³adów równañ
-liniowych, postaci Ax = b albo (A - sI)x = b. Macierz A - sI musi byæ
-symetryczna, ale nie mo¿e byæ nieokre¶lona i/lub osobliwa. Skalar s mo¿e
-byæ dowoln± liczb±. Metoda jest oparta na trójdiagonalizacji Lanczosa.
-Mo¿na jej dostarczyæ dodatnio okre¶lony preconditioner.
-W rzeczywisto¶ci, MINRES rozwi±zuje problem metody najmniejszych
-kwadratów: minimalizacja normy ||(A - sI)x - b||.
+Implementacja gradientowej metody rozwi±zywania rzadkich uk³adów
+równañ liniowych, postaci Ax = b albo (A - sI)x = b. Macierz A - sI
+musi byæ symetryczna, ale mo¿e byæ okre¶lona, nieokre¶lona lub
+osobliwa. Skalar s mo¿e byæ dowoln± liczb±. Metoda jest oparta na
+trójdiagonalizacji Lanczosa. Mo¿na jej dostarczyæ dodatnio okre¶lony
+preconditioner. W rzeczywisto¶ci, MINRES rozwi±zuje problem metody
+najmniejszych kwadratów: minimalizacja normy ||(A - sI)x - b||.
 
 %package devel
 Summary:	MINRES development files
