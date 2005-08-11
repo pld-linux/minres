@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with     acml    # With ACML version of BLAS instead of NETLIB implementation
+%bcond_with	acml    # With ACML version of BLAS instead of NETLIB implementation
 %bcond_with	atlas	# With ATLAS version of BLAS instead of NETLIB implementation
 			# (mutually exclusive with acml)
 #
