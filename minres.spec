@@ -20,10 +20,10 @@ Source2:	http://www.stanford.edu/group/SOL/software/minres/f77/minres_f77.README
 Patch0:		%{name}-automake_support.patch
 Patch1:		%{name}-omitblas.patch
 URL:		http://www.stanford.edu/group/SOL/software/minres.html
-BuildRequires:  autoconf
-BuildRequires:  automake
-BuildRequires:  gcc-g77
-BuildRequires:  libtool >= 2:1.5
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	gcc-g77
+BuildRequires:	libtool >= 2:1.5
 %{!?with_acml:%{!?with_atlas:BuildRequires:	blas-devel}}
 %{?with_acml:ExclusiveArch:	amd64}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
