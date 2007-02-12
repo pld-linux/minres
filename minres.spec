@@ -5,7 +5,7 @@
 			# (mutually exclusive with acml)
 #
 Summary:	Iterative linear equations solver
-Summary(pl):	Rozwi±zywanie równañ liniowych metod± iteracyjn±
+Summary(pl.UTF-8):   RozwiÄ…zywanie rÃ³wnaÅ„ liniowych metodÄ… iteracyjnÄ…
 Name:		minres
 Version:	20030722
 Release:	1%{?with_acml:ACML}%{?with_atlas:ATLAS}
@@ -37,37 +37,37 @@ method is based on Lanczos tridiagonalization. You may provide a
 preconditioner, but it must be positive definite. MINRES is really
 solving the least-squares problem minimize ||(A - sI)x - b||. 
 
-%description -l pl
-Implementacja gradientowej metody rozwi±zywania rzadkich uk³adów
-równañ liniowych, postaci Ax = b albo (A - sI)x = b. Macierz A - sI
-musi byæ symetryczna, ale mo¿e byæ okre¶lona, nieokre¶lona lub
-osobliwa. Skalar s mo¿e byæ dowoln± liczb±. Metoda jest oparta na
-trójdiagonalizacji Lanczosa. Mo¿na jej dostarczyæ dodatnio okre¶lony
-preconditioner. W rzeczywisto¶ci, MINRES rozwi±zuje problem metody
-najmniejszych kwadratów: minimalizacja normy ||(A - sI)x - b||.
+%description -l pl.UTF-8
+Implementacja gradientowej metody rozwiÄ…zywania rzadkich ukÅ‚adÃ³w
+rÃ³wnaÅ„ liniowych, postaci Ax = b albo (A - sI)x = b. Macierz A - sI
+musi byÄ‡ symetryczna, ale moÅ¼e byÄ‡ okreÅ›lona, nieokreÅ›lona lub
+osobliwa. Skalar s moÅ¼e byÄ‡ dowolnÄ… liczbÄ…. Metoda jest oparta na
+trÃ³jdiagonalizacji Lanczosa. MoÅ¼na jej dostarczyÄ‡ dodatnio okreÅ›lony
+preconditioner. W rzeczywistoÅ›ci, MINRES rozwiÄ…zuje problem metody
+najmniejszych kwadratÃ³w: minimalizacja normy ||(A - sI)x - b||.
 
 %package devel
 Summary:	MINRES development files
-Summary(pl):	Pliki programistyczne MINRES
+Summary(pl.UTF-8):   Pliki programistyczne MINRES
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 MINRES development files.
 
-%description devel -l pl
+%description devel -l pl.UTF-8
 Pliki programistyczne MINRES.
 
 %package static
 Summary:	Static MINRES library
-Summary(pl):	Statyczna biblioteka MINRES
+Summary(pl.UTF-8):   Statyczna biblioteka MINRES
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static MINRES library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka MINRES.
 
 %prep
