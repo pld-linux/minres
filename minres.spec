@@ -5,7 +5,7 @@
 			# (mutually exclusive with acml)
 #
 Summary:	Iterative linear equations solver
-Summary(pl.UTF-8):   Rozwiązywanie równań liniowych metodą iteracyjną
+Summary(pl.UTF-8):	Rozwiązywanie równań liniowych metodą iteracyjną
 Name:		minres
 Version:	20030722
 Release:	1%{?with_acml:ACML}%{?with_atlas:ATLAS}
@@ -48,7 +48,7 @@ najmniejszych kwadratów: minimalizacja normy ||(A - sI)x - b||.
 
 %package devel
 Summary:	MINRES development files
-Summary(pl.UTF-8):   Pliki programistyczne MINRES
+Summary(pl.UTF-8):	Pliki programistyczne MINRES
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -60,7 +60,7 @@ Pliki programistyczne MINRES.
 
 %package static
 Summary:	Static MINRES library
-Summary(pl.UTF-8):   Statyczna biblioteka MINRES
+Summary(pl.UTF-8):	Statyczna biblioteka MINRES
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
