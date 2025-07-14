@@ -73,8 +73,8 @@ Statyczna biblioteka MINRES.
 %prep
 %setup -q -c -T
 cp %{SOURCE1} .
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 cp %{SOURCE0} .
 cp %{SOURCE2} README
